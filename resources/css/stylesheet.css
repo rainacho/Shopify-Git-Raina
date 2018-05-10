@@ -1,0 +1,124 @@
+/*--------------------------------*/
+/*BASIC-SETUP*/
+/*--------------------------------*/
+
+body {
+    font-family: "Helvetica", Arial, sans-serif;
+    background-color: #000639;
+    color: #fff;
+    font-size: 16px;
+}
+
+
+
+input,select{
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    color: #7b7b7b;
+    background-color: #fff;
+}
+
+input{width: 58%;}
+
+select{
+  width: 38%;
+  float: right;
+  margin-left: 1%;
+}
+
+input,
+select{
+  -webkit-appearance: none;-moz-appearance: none;appearance: none;
+}
+
+input[type="submit"]{
+    width: 100%;
+    background-color: #5c6ac4;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #ffe84a;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/*--------------------------------*/
+/*REUSARBLE COMPONENT*/
+/*--------------------------------*/
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.box {
+  padding: 0 20%;
+}
+
+/*--------------HEADINGS--------------*/
+h1:after {
+  display: block;
+  height: 2px;
+  background-color: #7ab55c;
+  content: " ";
+  width: 25px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+/*--------------------------------*/
+/*SECTION-NEWSLETTER-FORM*/
+/*--------------------------------*/
+
+.title {
+    font-size: 24px;
+    margin-top: 40px;
+}
+
+.arrow{
+  background: #fff url("../img/baseline-arrow_drop_down.svg");
+  background-repeat: no-repeat;
+  background-position: 96% 50%;
+  background-size: 20px 20px;
+}
+
+#email-error {
+  color: #c23628;
+  margin-top: 8px;
+  display: none;
+  font-size: 12px;
+}
+
+#thanks-message {
+  display: none;
+}
+
+/*--------------------------------*/
+/*mediaquery*/
+/*--------------------------------*/
+@media only screen and (max-width: 1200px){
+  input{width: 56%;}
+  select{width: 36%; float: right;margin-left: 1%;}
+}
+
+@media only screen and (max-width: 1023px){
+  input{width: 54%;}
+  select{width: 34%; float: right;margin-left: 1%;}
+}
+
+@media only screen and (max-width: 767px){
+  input{width: 52%;}
+  select{width: 32%; float: right;margin-left: 1%;}
+}
+@media only screen and (max-width: 480px){
+  .arrow{background-image: none;}
+}
